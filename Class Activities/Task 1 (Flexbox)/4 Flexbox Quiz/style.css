@@ -1,0 +1,193 @@
+/* I set the both the height and margin for the html and body element */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Styling used for the background */
+/* A fixed image is used as the background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('Image/QuizBackground.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  animation: slideUp 0.7s ease-in-out;
+}
+
+/* Styling used for the entire Quiz flex layout Container including size, background color, and position */
+.Quiz-Layout-Container {
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh; 
+  background-color: white;
+  padding: 60px;
+  border-radius: 10px;
+  gap: 25px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 10px 15px rgb(25, 5, 5);
+  overflow-y: auto; 
+}
+
+/* Styling for the heading 1 or h1 tag within the  QuizQuestion container. This sets its font size, color, and alignment */
+.QuizQuestion h1 {
+  font-size: 55px;
+  font-weight: 700;
+  color: #005f87;
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInTransition 1s ease-in-out;
+}
+
+/* Styling for the heading 3 or h3 tag within the  QuizQuestion container. This sets its font size, color, and alignment */
+.QuizQuestion h3 {
+  font-size: 20px;
+  color: #005f87;
+}
+
+/* Styling for the QuizAnswers Container */
+.QuizAnswers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Styling for the buttons */
+button {
+  flex: 1;
+  font-size: 14px;
+  color: white;
+  background-color: #377ab1;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling for the buttons when hovered. This includes the changing of background color and text color */
+button:hover {
+  color: white;
+  background-color: #28aa2f;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(11, 11, 11, 0.932);
+}
+
+/* Styling for the active button when clicked */
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(11, 11, 11, 0.932);
+}
+
+/* Styling when the button is the correct answer */
+button.correct {
+  background-color: #28aa2f; 
+  color: white;
+}
+
+/* Styling when the button is the incorrect answer */
+button.incorrect {
+  color: white;
+  border: 5px solid #911919;
+}
+
+/* Styling used to show that the button has been selected. This includes changing the background color to green when the button is selected */
+button.selected {
+  background-color: #28aa2f;
+  color: white;
+}
+
+/* Hover effects on disabled buttons */
+button:disabled:hover {
+  background-color: white;
+}
+
+/* Styling for the buttons that are disabled such as no cursor allowed and lower opacity */
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Styling for the Submit Button */
+#SubmitButton {
+  background-color: #377ab1;
+  color: white;
+  font-weight: bold;
+  padding: 14px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Styling for the Submit Button when hovered. Including changing its background color and size */
+#SubmitButton:hover {
+  background-color: #28aa2f;
+  transform: scale(1.10);
+}
+
+/* CSS Animation */
+/* @Keyframes for animations */
+/* @Keyframes for sliding up animation */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* @Keyframes for fading in transition */
+@keyframes fadeInTransition {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* Media Queries for Responsivenes */
+/* Styling for screens with a maximum width of 768px such as tablets and mobiles */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .Quiz-Layout-Container {
+    padding: 15px;
+    max-height: 80vh; 
+  }
+
+  .QuizAnswers {
+    flex-direction: column;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Styling for screens with a maximum width of 480px such as mobiles */
+@media (max-width: 480px) {
+  .Quiz-Layout-Container {
+    width: 90%;
+    padding: 10px;
+    max-height: 90vh;
+    margin-bottom: 50px;
+
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
