@@ -1,0 +1,139 @@
+/* Styling used for the entire body */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(185, 170, 150), #ac744c); 
+}
+  
+/* Styling for the entire photo grid including centering its container and adding padding for inner spacing */
+.Photo-Grid-Container {
+    margin: 0 auto;
+    padding: 20px 50px 20px 50px; 
+}
+ /* Styling for the heading 1 or h1 tag such as its text color, alignment, and font size */
+.Photo-Grid-Container h1 {
+    color: #4b3204;
+    text-align: center;
+    font-size: 65px;
+}
+
+ /* Styling for the heading 2 or h2 tag such as its text color, alignment, and font size */
+.Photo-Grid-Container h2 {
+    color: rgb(249, 223, 190);
+    font-size: 45px;
+    text-align: center;
+}
+
+ /* Styling for the paragraph or p tag such as its text color, alignment, and font size */
+.Photo-Grid-Container p {
+    color: rgb(249, 223, 190);
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Styling for the grid layout of the images */
+.Photo-Grid-Container .Photo-Grid-Images-Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 15px; 
+    justify-items: center; 
+}
+  
+/* Styling for the images individually */
+.Photo-Grid-Container .Photo-Grid-Images-Container .Photo-Grid-Image-Content {
+    position: relative;
+    width: 100%; 
+    height: 600px; 
+    background-size: cover;
+    overflow: hidden;
+    cursor: pointer;
+    background: #382502;
+}
+  
+/* This is the main image styling within the content */
+.Photo-Grid-Container .Photo-Grid-Images-Container .Photo-Grid-Image-Content .Photo-Grid-Main-Image-Content {
+    position: relative;
+    display: block;
+    object-fit: cover;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+  
+/* Styling for each of the image's information overlay */
+.Photo-Grid-Container .Photo-Grid-Images-Container .Photo-Grid-Image-Content .Photo-Grid-Image-Information {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+ 
+/* Styling for the container for main image information  */
+.Photo-Grid-Container .Photo-Grid-Images-Container .Photo-Grid-Image-Content .Main-Image-Information-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px; 
+}
+
+/* Styling for the image's descriptions */
+.Photo-Grid-Container .Photo-Grid-Images-Container .Photo-Grid-Image-Content .Image-Description {
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: all 0.6s ease-in-out;
+}
+  
+/* This is the on hover effect that reduces the opacity and increases the size or scale of the image */
+.Photo-Grid-Container .Photo-Grid-Images-Container .Photo-Grid-Image-Content:hover .Photo-Grid-Main-Image-Content {
+    opacity: 0.3;
+    transform: scale(1.5);
+}
+  
+/* I added an on hover effect that would unveil the image's description */
+.Photo-Grid-Container .Photo-Grid-Images-Container .Photo-Grid-Image-Content:hover .Image-Description {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+/* This hides the name of the image's photographer */
+.Photo-Grid-Container .Photo-Grid-Images-Container .Photo-Grid-Image-Content .Image-Photographer {
+    opacity: 0; 
+    transform: translateY(120px); 
+    transition: all 0.3s ease-in-out; 
+}
+
+/* I added an on hover effect that would unveil the name of the image's photographer */
+.Photo-Grid-Container .Photo-Grid-Images-Container .Photo-Grid-Image-Content:hover .Image-Photographer {
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+/* Media Queries */
+/* I used a media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) { 
+    /* Additional padding */
+    .Photo-Grid-Container {
+      padding: 30px;
+  }
+}
+  
+/* I used a media query for screens smaller than 512px */
+@media only screen and (max-width: 512px) { 
+    /* Additional padding */
+    .Photo-Grid-Container {
+      padding: 30px;
+  }
+  
+  /* This is to make the layout into a single column when in this screen size */
+  .Photo-Grid-Container .Photo-Grid-Images-Container {
+      grid-template-columns: 1fr; 
+  }
+}
+  
