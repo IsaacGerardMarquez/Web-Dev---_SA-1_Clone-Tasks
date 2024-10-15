@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to the CSS/Stylesheets -->
+    <link rel="stylesheet" href="/Task 2 (Grid)/4 Product Page/style.css">
+
+    <!-- Website Title -->
+    <title>Product Page</title>
+
+</head>
+<body>
+    
+    <!-- Container for the Product Page -->
+    <div class="Product-Page-Container">
+ 
+        <!-- Product Page Left Column -->
+        <div class="Product-Page-Column-Image">
+          <img data-image="blue" class="active" src="/Task 2 (Grid)/4 Product Page/Images/Blue.png" alt="Image of the Blue iPhone 16">
+          <img data-image="green" src="/Task 2 (Grid)/4 Product Page/Images/Green.png" alt="Image of the Green iPhone 16">
+          <img data-image="pink" src="/Task 2 (Grid)/4 Product Page/Images/Pink.png" alt="Image of the Pink iPhone 16">
+          <img data-image="white" src="/Task 2 (Grid)/4 Product Page/Images/White.png" alt="Image of the White iPhone 16">
+          <img data-image="black" src="/Task 2 (Grid)/4 Product Page/Images/Black.png" alt="Image of the Black iPhone 16">
+        </div>
+       
+       
+        <!-- Product Page Right Column -->
+        <div class="Product-Page-Column-Description">
+       
+          <!-- Product Description -->
+          <div class="iPhone-16-Description">
+
+            <!-- Product Title or Name -->
+            <h1>iPhone 16</h1>
+
+            <!-- Product Description or Information -->
+            <p>The versatile new iPhone 16 camera system captures beautiful photos — from up close or far away. The two-in-one 48MP Fusion camera lets you take stunning super-high-resolution images, or zoom in with the 2x optical-quality Telephoto. The Ultra Wide camera shoots extreme close-up macro photos or wider, more expansive pictures. Altogether, it’s like having four lenses in your pocket. And with spatial capture, you can even take photos and videos in 3D.</p>
+          </div>
+       
+          <!-- Product Colors -->
+          <div class="Product-Changing-Color">
+       
+            <!-- iPhone 16 Colors -->
+            <div class="iPhone-16-Color">
+              <p>Color</p>
+       
+              <!-- This is for the change color feature -->
+              <div class="iPhone-16-Color-Variants">
+                
+                <!-- Blue Color -->
+                <div>
+                  <input data-image="blue" type="radio" id="blue" name="color" value="blue" checked>
+                  <label for="blue"><div></div></label>
+                </div>
+
+                <!-- Green Color -->
+                <div>
+                  <input data-image="green" type="radio" id="green" name="color" value="green">
+                  <label for="green"><div></div></label>
+                </div>
+
+                <!-- Pink Color -->
+                <div>
+                  <input data-image="pink" type="radio" id="pink" name="color" value="pink">
+                  <label for="pink"><div></div></label>
+                </div>
+
+                <!-- White Color -->
+                <div>
+                    <input data-image="white" type="radio" id="white" name="color" value="white">
+                    <label for="white"><div></div></label>
+                  </div>
+
+                  <!-- Black Color -->
+                  <div>
+                    <input data-image="black" type="radio" id="black" name="color" value="black">
+                    <label for="black"><div></div></label>
+                  </div>
+              </div>
+            </div>
+       
+            <!-- iPhone 16 Storage Capacity Options -->
+            <div class="iPhone-16-Storage-Capactiy">
+              <p>Storage Capacity</p>
+       
+              <div class="iPhone-16-Storage-Options">
+                <button data-price="$800" data-storage="128 GB">128 GB</button>
+                <button data-price="$900" data-storage="256 GB">256 GB</button>
+                <button data-price="$1,099" data-storage="512 GB">512 GB</button>
+              </div>
+       
+            </div>
+
+          </div>
+        
+       <hr><!-- Horizontal Line that separates the price -->
+
+          <!-- Product (iPhone 16) Price -->
+          <div class="Product-Page-Price">
+            <p>Price</p>
+
+            <!-- Purchase Button -->
+            <button>Purchase</button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <script src="/Task 2 (Grid)/4 Product Page/script.js"></script>
+
+</body>
+</html>
