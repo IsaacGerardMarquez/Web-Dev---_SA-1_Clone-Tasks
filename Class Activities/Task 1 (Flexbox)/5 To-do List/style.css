@@ -1,0 +1,176 @@
+/* Styling used for the entire body including its background and a full screen layout */
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f5deb3, #8B4513); 
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+}
+
+/* Styling for the To-do-List-Container using flexbox layu*/
+.To-do-List-Container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    align-items: center;
+    margin: 20px;
+    width: 100%; 
+    max-width: 800px; 
+    height: 100%; 
+    padding: 20px;
+}
+
+/* Styling for both the heading 1 or h1 and input tag */
+h1, input {
+    margin: 1px auto;
+    display: block;
+    text-align: center;
+}
+
+/* Styling for the heading 1 or h1 tag responsible for its size and color */
+h1 {
+    color: #805500;
+    font-size: 5em;
+}
+
+/* Styling for the input bar  */
+input {
+    font-size: 19px;
+    max-width: 180px;
+    padding: 10px 60px; 
+    border: 2px solid #805500;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: all 0.6s ease; 
+}
+
+/* Styling when the input bar is active or selected */
+input:focus {
+    border-color: yellow;
+    box-shadow: 0 0 5px yellow;
+}
+
+/* Styling for the Bulletin-Board container responsible for the use of an image as background and its entire lay out */
+.Bulletin-Board {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    position: relative;
+    align-items: center; 
+    margin: 10px 0; 
+    width: 100%;
+    max-width: 1000px; 
+    height: 800px;
+    overflow-y: auto; 
+    background-image: url("Images/Bulletin\ Board\ Background.jpg");
+    border: 20px solid #624304;
+    box-shadow: 0 20px 40px rgb(44, 39, 39); 
+}
+
+/*  Styling to create a flexbox layout for the "Post-It" container */
+ul.Post-It {
+    padding: 0; 
+    margin: 0; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+/* Styling used for each "Post-It" */
+ul.Post-It li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%; 
+    max-width: 150px; 
+    font-size: 1.2rem;
+    background: #FFFF99;
+    height: auto; 
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 20px 40px rgba(44, 39, 39, 0.533); 
+    border-radius: 45px 45px 110px 110px / 6px 4px 3px 3px;
+    list-style-type: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /
+}
+
+/* Styling for the Post-It when hovered */
+ul.Post-It li:hover {
+    transform: scale(1.10);
+    box-shadow: 0 25px 50px rgba(44, 39, 39, 0.8); 
+}
+
+/* Styling used for the pin box icon including its color and position */
+.bx-pin {
+    margin-right: 5px; 
+    color: #331a00;
+}
+
+/* Styling for the x icon including its color, position, and transition. */
+ul.Post-It li .bx-x-circle {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 0;
+    color: red;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s linear;
+}
+
+/* This unveils the x or close icon when hovered */
+ul.Post-It li:hover .bx-x-circle {
+    opacity: 1;
+}
+
+/* Styling to enlarge the icon when hovered */
+.Post-It i:hover {
+    transform: scale(1.25);
+}
+
+/* Styling to put a red dash on the tasks or activities when clicked */
+.CheckOrDash {
+    color: red;
+    text-decoration: line-through;
+}
+
+/* Media queries for Responsiveness */
+/* I used a media query for screens smaller than 1024px */
+/* This all adjusts the font size, input bar size, and list */
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 4.5em; 
+    }
+    input {
+        width: 90%; /
+    }
+}
+
+/* I used a media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 3.5em;
+    }
+    input {
+        width: 90%; 
+    }
+}
+
+/* I used a media query for screens smaller than 480px */
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.5em; 
+    }
+    input {
+        width: 90%; 
+    }
+    ul.Post-It li {
+        font-size: 1rem; 
+        width: 90%; 
+        max-width: none; 
+    }
+}
