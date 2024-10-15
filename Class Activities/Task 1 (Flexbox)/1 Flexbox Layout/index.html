@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the CSS/Stylesheets -->
+    <link rel="stylesheet" href="/Class Activities/Task 1 (Flexbox)/1 Flexbox Layout/style.css">
+
+    <!-- Link to the Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link to the Website Icon --> 
+     <link rel="icon" href="/Class Activities/Task 1 (Flexbox)/1 Flexbox Layout/Images/bsu-logo-header.png">
+
+
+    <!-- Website Title -->
+    <title>Flexbox Layout</title>
+
+</head>
+<body>
+
+    <!-- Horizontal Navigation Menu -->
+    <nav>
+        <div class="Navigation-Menu-Container">
+            <!-- Bath Spa University Website Logo -->
+            <div class="BathSpaUniversityLogo"><a href="#">
+                <!-- Bath Spa University Website Logo Image -->
+                <img src="/Class Activities/Task 1 (Flexbox)/1 Flexbox Layout/Images/bsu-logo-header.png" alt="Bath Spa University Logo">
+            </a></div>
+
+            <!-- Menu and Close Button - Responsive -->
+            <input type="radio" name="slider" id="Responsive-Menu-Button">
+            <input type="radio" name="slider" id="Responsive-Close-Button">
+
+            <!-- Navigational Links (including Home, Programmes, Student Life, and Contact Us) -->
+            <ul class="Navigation-Menu-Links">
+
+                <!-- Close Button -->
+                <label for="Responsive-Close-Button" class="btn Responsive-Close-Button">
+                    <!-- Close Button Icon -->
+                    <i class='bx bx-x-circle'></i>
+                </label>
+
+                <!-- Home Section -->
+                <li>
+                    <a href="#">Home</a>
+                </li> 
+
+                <!-- Programmes Section -->
+                <li>
+                    <a href="#" class="Website-Section-Title">Programmes</a>
+
+                    <!-- Mega Menu -->
+                    <!-- Checkbox used to toggle visibility of the Mega Menu -->
+                    <input type="checkbox" id="Programmes">
+                    <label for="Programmes" class="Responsive-View">Programmes</label>
+
+                    <!-- Website Mega Menu containing the University's programmes -->
+                    <div class="Website-Mega-Menu">
+                        <div class="Website-Mega-Menu-Contents">
+                            <div class="Website-Mega-Menu-Columns">
+                                <img src="/Class Activities/Task 1 (Flexbox)/1 Flexbox Layout/Images/Creative Computing.jpg" alt="A student programming in a computer.">
+                            </div>
+                            <div class="Website-Mega-Menu-Columns">
+                                <h1>Creative Computing</h1>
+                                <ul class="Website-Mega-Menu-Links">
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">Code Lab</a></li>
+                                    <li><a href="#">Machine Learning</a></li>
+                                    <li><a href="#">Physical Computing</a></li>
+                                </ul>
+                            </div>
+                            <div class="Website-Mega-Menu-Columns">
+                                <h1>Creative Media</h1>
+                                <ul class="Website-Mega-Menu-Links">
+                                    <li><a href="#">Creative Photography</a></li>
+                                    <li><a href="#">Short Film Production</a></li>
+                                    <li><a href="#">Visual Effects</a></li>
+                                    <li><a href="#">Promotional Media</a></li>
+                                </ul>
+                            </div>
+                            <div class="Website-Mega-Menu-Columns">
+                                <h1>Cyber Security</h1>
+                                <ul class="Website-Mega-Menu-Links">
+                                    <li><a href="#">Digital Forensics</a></li>
+                                    <li><a href="#">Cyber Resilience</a></li>
+                                    <li><a href="#">Artificial Intelligence</a></li>
+                                    <li><a href="#">Software Engineering</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Student Life Section -->
+                <li>
+                    <a href="#" class="Website-Section-Title">Student Life</a>
+
+                    <!-- Mega Menu -->
+                    <!-- Checkbox used to toggle visibility of the Mega Menu -->
+                    <input type="checkbox" id="StudentLife">
+                    <label for="StudentLife" class="Responsive-View">Student Life</label>
+
+                    <!-- Website Mega Menu containing the University's student life -->
+                    <div class="Website-Mega-Menu">
+                        <div class="Website-Mega-Menu-Contents">
+                            <div class="Website-Mega-Menu-Columns">
+                                <img src="/Class Activities/Task 1 (Flexbox)/1 Flexbox Layout/Images/StudentLife.jpg" alt="Students reading books in the library.">
+                            </div>
+                            <div class="Website-Mega-Menu-Columns">
+                                <h1>Campus</h1>
+                                <ul class="Website-Mega-Menu-Links">
+                                    <li><a href="#">Facilities</a></li>
+                                    <li><a href="#">Transportation</a></li>
+                                    <li><a href="#">Housing and Accommodation</a></li>
+                                    <li><a href="#">Custom logo</a></li>
+                                </ul>
+                            </div>
+                            <div class="Website-Mega-Menu-Columns">
+                                <h1>Opportunities</h1>
+                                <ul class="Website-Mega-Menu-Links">
+                                    <li><a href="#">Job Fairs</a></li>
+                                    <li><a href="#">UK Study Tour</a></li>
+                                    <li><a href="#">Internships</a></li>
+                                    <li><a href="#">Scholarships</a></li>
+                                </ul>
+                            </div>
+                            <div class="Website-Mega-Menu-Columns">
+                                <h1>Events</h1>
+                                <ul class="Website-Mega-Menu-Links">
+                                    <li><a href="#">Freshers Party</a></li>
+                                    <li><a href="#">Monthly Medley</a></li>
+                                    <li><a href="#">Sports Festival</a></li>
+                                    <li><a href="#">Foundation Day</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Contact Us Section -->
+                <!-- Utilises a Dropdown Menu -->
+                <li>
+                    <a href="#" class="Website-Section-Title">Contact Us</a>
+                    <input type="checkbox" id="ContactUs">
+                    <label for="ContactUs" class="Responsive-View">Contact Us</label>
+
+                    <!-- Dropdown menu with links to the university's contact information -->
+                    <ul class="ContactUs-DropDownMenu">
+                        <li><a href="mailto:admissions@bathspa.ae" target="_blank">admissions@bathspa.ae</a></li>
+                        <li><a href="tel:07 236 9495" target="_blank">07 236 9495</a></li>
+                        <li><a href="https://maps.app.goo.gl/tHPnCtm8Go6PxytK9" target="_blank">RAKEZ Academic Zone 3, Block D First Floor, Al Dhait South Ras Al Khaimah, UAE</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <!-- Menu Button -->
+            <label for="Responsive-Menu-Button" class="btn Responsive-Menu-Button">
+                <!-- Menu Button Icon -->
+                <i class='bx bx-menu'></i>
+            </label>
+        </div>
+    </nav>
+
+    <!-- Website Text -->
+    <div class="Website-Caption">
+        <p>A Space to Grow</p>
+        <hr><p>Bath Spa University</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>Copyright &copy; 2024 | Horizontal Navigation Menu | Made by: Isaac Gerard S. Marquez</footer>
+
+</body>
+</html>
