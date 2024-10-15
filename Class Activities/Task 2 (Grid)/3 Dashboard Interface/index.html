@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the CSS/Stylesheets -->
+    <link rel="stylesheet" href="/Task 2 (Grid)/3 Dashboard Interface/style.css">
+
+    <!-- Link to the Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Website Title -->
+    <title>Dashboard Interface</title>
+
+</head>
+<body>
+    
+    <!-- Main Container -->
+    <div class="GridLayoutContainer">
+
+      <!-- Header -->
+      <div class="WebsiteHeader">
+          <div class="Menu-Button">
+              <div class="SidebarMenuButton">
+                  <i class='bx bx-menu'></i>
+              </div>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="Search-Bar">
+              <input type="text" placeholder="Search...">
+          </div>
+
+          <!-- User Profile Menu Button -->
+          <div class="User-Profile">
+
+              <div class="User-Profile-Menu-Button">
+                  <ul>
+                      <!-- User Icon from BoxIcon -->
+                      <li><i class='bx bx-user-circle'></i>
+                          <!-- Drop Down Profile Menu -->
+                          <div class="User-Profile-Menu-Button-Contents">
+                              <!-- User Profile Buttons -->
+                              <div class="User-Profile-Menu-Selections">EDIT PROFILE</div>
+                              <div class="User-Profile-Menu-Selections">SETTINGS</div>
+                              <div class="User-Profile-Menu-Selections">PRIVACY</div>
+                              <div class="User-Profile-Menu-Selections">HELP DESK</div>
+                              <div class="User-Profile-Menu-Selections">SIGN OUT</div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Side Bar -->
+      <div class="Main-Sidebar-Container">
+          <div class="Sidebar-Contents">
+
+                  <!-- User Profile -->
+                  <div class="Main-User-Profile-Container">
+
+                          <!-- User Image -->
+                          <img src="/Task 2 (Grid)/1 Grid Layout/Images/Isaac.png" alt="Isaac Marquez's Image">
+
+                          <!-- User Profile Name -->
+                      <div class="User-Profile-Name">
+                          <h2>Welcome</h2>
+                          <p>Isaac Marquez</p>
+                      </div>
+                  </div>
+
+
+                  <!-- Side Bar Buttons -->
+                  <ul>
+
+                      <!-- Home Button -->
+                      <li>
+                          <a href="#">
+                              <div class="Sidebar-Button-Icon"><i class='bx bx-home' ></i></div>
+                              <div class="Sidebar-Button-Name">Home</div>
+                          </a>
+                      </li>
+
+                      <!-- Statistics Button -->
+                      <li>
+                          <a href="#">
+                              <div class="Sidebar-Button-Icon"><i class='bx bxs-pie-chart-alt' ></i></div>
+                              <div class="Sidebar-Button-Name">Statistics</div>
+                          </a>
+                      </li>
+
+                      <!-- Recent Activity Button -->
+                      <li>
+                          <a href="#">
+                              <div class="Sidebar-Button-Icon"><i class='bx bxs-time' ></i></div>
+                              <div class="Sidebar-Button-Name">Recent Activity</div>
+                          </a>
+                      </li>
+
+                      <!-- Notifications Button -->
+                      <li>
+                          <a href="#">
+                              <div class="Sidebar-Button-Icon"><i class='bx bxs-bell-ring' ></i></div>
+                              <div class="Sidebar-Button-Name">Notifications</div>
+                          </a>
+                      </li>
+
+
+                  </ul>
+          </div>
+
+          <!-- Widgets -->
+          <div class="Widgets">
+
+              <!-- Statistics Widget -->
+              <div class="Widget-Item Statistics">
+                <h1>Statistics</h1>
+
+                <!-- Pie-Chart -->
+                <div class="Pie-Chart-Container">
+                  <h3>Web Development 2 (Task Progress)</h3>
+                  <figcaption>
+                    Task 1: Flexbox 100% <span style="color:#167519"></span><br>
+                    Task 2: Grid 80% <span style="color:#f5dd08"></span><br>
+                    Task 3: HTML Resource Guide 60% <span style="color:#eb9b23"></span><br>
+                    Task 4: Weston’s Chocolate Mock Up Website 50% <span style="color:#c51306"></span>
+                  </figcaption>
+                </div>
+              </div>
+            
+              <!-- Recent Activities -->
+              <div class="Widget-Item RecentActivities">
+                  <h1>Recent Activities</h1>
+
+                  <!-- Recent Activities List -->
+                  <ul class="RecentActivities-List">
+                    <li class="RecentActivities-Task">
+
+                      <!-- Date -->
+                      <span class="RecentActivities-Date">Oct 1, 2024</span>
+                      <!-- Description -->
+                      <p class="RecentActivities-Description">Completed an Introduction to HTML course on SoloLearn.</p>
+                    </li>
+
+                    <li class="RecentActivities-Task">
+
+                      <!-- Date -->
+                      <span class="RecentActivities-Date">Oct 3, 2024</span>
+                      <!-- Description -->
+                      <p class="RecentActivities-Description">Completed an Introduction to CSS course on SoloLearn.</p>
+                    </li>
+
+                    <li class="RecentActivities-Task">
+
+                      <!-- Date -->
+                      <span class="RecentActivities-Date">Oct 4, 2024</span>
+                      <!-- Description -->
+                      <p class="RecentActivities-Description">Completed an Introduction to JavaScript course on SoloLearn.</p>
+                    </li>
+
+                    <li class="RecentActivities-Task">
+
+                      <!-- Date -->
+                      <span class="RecentActivities-Date">Oct 7, 2024</span>
+                      <!-- Description -->
+                      <p class="RecentActivities-Description">Completed JavaScript Intermediate course on SoloLearn.</p>
+                    </li>
+
+                    <li class="RecentActivities-Task">
+
+                      <!-- Date -->
+                      <span class="RecentActivities-Date">Oct 9, 2024</span>
+                      <!-- Description -->
+                      <p class="RecentActivities-Description">Earned a Web Development Certificate from SoloLearn.</p>
+                    </li>
+
+                    <li class="RecentActivities-Task">
+
+                      <!-- Date -->
+                      <span class="RecentActivities-Date">Oct 10, 2024</span>
+                      <!-- Description -->
+                      <p class="RecentActivities-Description">Submitted the Web Development 2 Assessment.</p>
+                    </li>
+
+                    <li class="RecentActivities-Task">
+
+                      <!-- Date -->
+                      <span class="RecentActivities-Date">Oct 14, 2024</span>
+                      <!-- Description -->
+                      <p class="RecentActivities-Description">Completed the Python Tkinter course from Great Learning.</p>
+                    </li>
+
+                    <li class="RecentActivities-Task">
+
+                      <!-- Date -->
+                      <span class="RecentActivities-Date">Oct 15, 2024</span>
+                      <!-- Description -->
+                      <p class="RecentActivities-Description">Uploaded the Celeste Game Review Video.</p>
+                    </li>
+                  </ul>
+                </div>
+                
+              <!-- Notification Widget -->
+              <div class="Widget-Item Notifications">
+                <h1>Notifications</h1>
+
+                <div class="Notification">
+
+                  <!-- Notification Message -->
+                  <p><strong>Reminder:</strong> Deadline for Assessment 1 in Web Development 2 is on <strong>November 15, 2024.</strong></p>
+                  <!-- Remove Notification Button -->
+                  <button class="Remove-Notification" onclick="removeNotification(this)">Remove</button>
+                </div>
+                <div class="Notification">
+
+                  <!-- Notification Message -->
+                  <p>Yyan Flores sent you a message about the Group Project in Game Development.</p>
+                  <!-- Remove Notification Button -->
+                  <button class="Remove-Notification" onclick="removeNotification(this)">Remove</button>
+                </div>
+                <div class="Notification">
+
+                  <!-- Notification Message -->
+                  <p><strong>Reminder:</strong> Quiz for HTML and CSS is scheduled for <strong>October 14, 2024.</strong></p>
+                  <!-- Remove Notification Button -->
+                  <button class="Remove-Notification" onclick="removeNotification(this)">Remove</button>
+                </div>
+                <div class="Notification">
+
+                  <!-- Notification Message -->
+                  <p><strong>Volunteer Opportunity:</strong> Join us as a volunteer for Mental and Physical Health Week.</p>
+                  <!-- Remove Notification Button -->
+                  <button class="Remove-Notification" onclick="removeNotification(this)">Remove</button>
+                </div>
+                <div class="Notification">
+
+                  <!-- Notification Message -->
+                  <p><strong>Event - Art Competition:</strong> Create artwork that represents mental and physical themes.</p>
+                  <!-- Remove Notification Button -->
+                  <button class="Remove-Notification" onclick="removeNotification(this)">Remove</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>	
+
+        <!-- JavaScript -->
+        <script src="/Task 2 (Grid)/3 Dashboard Interface/script.js"></script>
+
+</body>
+</html>
