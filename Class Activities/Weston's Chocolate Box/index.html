@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the CSS/Stylesheets -->
+    <link rel="stylesheet" href="/Class Activities/Weston's Chocolate Box/style.css">
+
+    <!-- Link to the Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Website Title -->
+    <title>Weston's Chocolate Box</title>
+    
+    <!-- Website Icon -->
+    <link rel="icon" href="/Class Activities/Weston's Chocolate Box/Images/Weston's Chocolates Logo.png">
+
+</head>
+<body>
+    
+    <!-- Section tag for the Home Section of the webpage -->
+    <section class="Home-Section" id="Home">
+
+        <!-- Navigation Menu -->
+        <div class="Navigation-Menu">
+
+            <!-- Website Logo in the Navigation Menu -->
+            <a href="#"><img src="/Class Activities/Weston's Chocolate Box/Images/Weston's Chocolates Logo.png" alt="Image of Weston's Chocolates Logo" class="Westons-Chocolate-Box-LOGO"></a>
+
+            <!-- Responsive Menu Button -->
+            <div class="Website-Menu-Button" onclick="menuToggle();">
+                <!-- BoxIcon Menu Icon -->
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <!-- Navigational Links for the Webpage -->
+            <ul class="Navigational-Links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+
+        <!-- Contents of the Homepage -->
+        <div class="Home-Page-Contents">
+
+             <!-- Text Description on the Homepage -->
+            <div class="Home-Page-Contents-Description">
+                <h1>WESTON'S CHOCOLATE BOX</h1>
+                <p>Create your perfect treat with Weston's Chocolate Box—customize your own delicious selection!</p>
+
+                <!-- Create Now Button -->
+                <a href="#">CREATE NOW!</a>
+
+            </div>
+
+            <!-- Homepage Chocolate Image -->
+            <div class="Chocolate-Box-Image">
+                <img src="/Class Activities/Weston's Chocolate Box/Images/Gold.png" class="Primary-Chocolate-Image">
+            </div>
+        </div>
+
+        <!-- Buttons for the Color Changing Feature -->
+        <ul class="Color-Change-Button">
+            <li><img src="/Class Activities/Weston's Chocolate Box/Images/Gold.png" onclick="imgSlider('/Class Activities/Weston\'s Chocolate Box/Images/Gold.png');changeBgColor('#f0c880')"></li>
+            <li><img src="/Class Activities/Weston's Chocolate Box/Images/Blue.png" onclick="imgSlider('/Class Activities/Weston\'s Chocolate Box/Images/Blue.png');changeBgColor('#9ab6dd')"></li>
+            <li><img src="/Class Activities/Weston's Chocolate Box/Images/Pink.png" onclick="imgSlider('/Class Activities/Weston\'s Chocolate Box/Images/Pink.png');changeBgColor('#f38289')"></li>
+        </ul>
+
+    </section>
+
+    <!-- Section tag for the About Section of the webpage -->
+    <!-- About Section -->
+    <section class="About-Section" id="About">
+
+        <!-- About Section Contents -->
+        <div class="About-Section-Description">
+
+            <!-- Text Description about the Weston's Chocolate Box Company -->
+            <h1>About Us</h1>
+            <p>At Weston's Chocolate Box, we aim to make every moment sweeter. It is our mission to provide everyone with a sweet experience by providing them with handcrafted chocolates made with the finest ingredients. You can customize your own box of chocolates that suits your own preferences and share that sweet moment with others!</p>
+
+            <!-- Learn More Button -->
+            <a href="#">LEARN MORE</a>
+        </div>
+
+        <!-- Image of chocolate in the About Us Section -->
+        <div class="About-Section-Image">
+            <img src="/Class Activities/Weston's Chocolate Box/Images/About Us.jpg" alt=" Image of Chocolates">
+        </div>
+    </section>
+    
+    <!-- JavaScript -->
+    <script src="/Class Activities/Weston's Chocolate Box/script.js"></script>
+
+</body>
+</html>
