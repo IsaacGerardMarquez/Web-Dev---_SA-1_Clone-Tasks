@@ -1,0 +1,100 @@
+/* Styling used for the entire body */
+/* This includes a gradient background of beige (#f5deb3) to brown (#8B4513) and Chicle font.*/
+body {
+    background: linear-gradient(to bottom, #f5deb3, #8B4513); 
+    font-family: 'Chicle', cursive; 
+}
+
+/* Styling for the heading or h1 tag including the sizing, positioning, and margin */
+h1 {
+    margin: 40px ;
+    font-size: 55px;
+    text-align: center;
+}
+
+/* Styling for the .Image-Gallery container */
+/* Creates a flexbox layout */
+.Image-Gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Styling used for the div named Image-Gallery-Responsiveness that is responsible for the responsiveness of the Image Gallery */
+.Image-Gallery-Responsiveness {
+    box-sizing: border-box;
+    flex: 1 1 24%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Styling for the Image-Gallery-Contents container */
+.Image-Gallery-Contents {
+    overflow: hidden;
+    position: relative;
+    background-color: #FFF; 
+    border: 5px solid #8b451362; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Styling for the images within the Image-Gallery-Contents container */
+.Image-Gallery-Contents img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Adds an on hover effect to the images within the Image-Gallery-Contents container including enlarging or zooming it */
+.Image-Gallery-Contents:hover img {
+    transform: scale(1.05);
+}
+
+/* Styling for the paragraph or p tag including the sizing, positioning, margin, text color, and background color */
+p {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%; 
+    text-align: center;
+    font-size: 21px; 
+    background-color: #f5deb3; 
+    padding: 10px; 
+    border-top: 4px solid #8B4513; 
+    box-shadow: inset 0 -2px 5px rgba(12, 4, 4, 0.586); 
+}
+
+/* Hover effect for the gallery item */
+.Image-Gallery-Contents:hover {
+    border-color: #8B4513;
+}
+
+/* Styling for the Footer */
+footer {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 15px 0;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    color: #f5deb3;
+}
+
+/* Media Queries */
+/* I used a media query for D */
+/* This creates a two image per row lay out */
+@media only screen and (max-width: 700px) {
+    .Image-Gallery-Responsiveness {
+        flex: 1 1 50%;
+        margin: 5px 0;
+    }
+}
+
+/* I used a media query for screens smaller than 500px */
+/* This creates a one image per row lay out */
+@media only screen and (max-width: 500px) {
+    .Image-Gallery-Responsiveness {
+        flex: 1 1 100%; 
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
