@@ -1,0 +1,393 @@
+/* Styling for the entire webpage including resetting the margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling used for the entire body */
+body {
+    background-image: url('Images/BathSpaUniversityRAK.JPG');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+}
+
+/* Styling for the Navigation Menu */
+nav {
+    position: fixed;
+    color: white;
+    text-decoration: none;
+    background-color: #28243c;
+    width: 100%;
+    z-index: 50;
+}
+
+/* Styling for both the  nav and Navigation-Menu-Container container */
+nav .Navigation-Menu-Container {
+    position: relative;
+    max-width: 1290px;
+    padding: 0px 16px;
+    height: 100px;
+    line-height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* This is to hide the input elements in the Navigation Menu */
+nav input{
+    display: none;
+}
+
+/* Styling for the Logo Image including size and top margin*/
+.BathSpaUniversityLogo img {
+    height: 60px; 
+    width: auto; 
+    margin-top: 20px;
+}
+
+/* Styling for the Navigational Links */
+.Navigation-Menu-Container .Navigation-Menu-Links {
+    display: inline-flex;
+}
+
+/* Styling to remove the bulletpoint */
+.Navigation-Menu-Links li {
+    list-style: none;
+}
+
+/* Styling for the Navigational Links or Anchor tags */
+.Navigation-Menu-Links li a {
+    position: relative; 
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+/* To add the underline on hover effect */
+.Navigation-Menu-Links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: 0.7s ease; 
+}
+
+/* To unveil or expand the underline */
+.Navigation-Menu-Links li a:hover::after {
+    width: 100%; 
+}
+
+/* Changes the background color when hovered over */
+.Navigation-Menu-Links li a:hover{
+    background: #28243c;
+}
+
+/* Styling to hide the responsive view links by default */
+.Navigation-Menu-Links .Responsive-View {
+    display: none;
+}
+
+/* Styling for the drop down menu and to position it */
+.Navigation-Menu-Links .ContactUs-DropDownMenu {
+    position: absolute;
+    background: #28243ce5;
+    width: 260px;
+    line-height: 65px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+/* This unveils the drop down menu when hovered */
+.Navigation-Menu-Links li:hover .ContactUs-DropDownMenu,
+.Navigation-Menu-Links li:hover .Website-Mega-Menu {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+/* Styling for the Close Button */
+.Navigation-Menu-Links i {
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+/* Styling for the Menu Button */
+  .Responsive-Menu-Button i {
+    font-size: 35px;
+}
+
+/* Styling for the Contact Us Dropdown Menu */
+.ContactUs-DropDownMenu li a {
+    width: 100%;
+    display: block;
+}
+
+/* Styling for the Mega Menu */
+.Website-Mega-Menu{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Website-Mega-Menu .Website-Mega-Menu-Contents {
+    display: flex;
+    justify-content: space-between;
+    background: #28243c;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 6px 10px rgba(3, 2, 2, 0.622);
+}
+
+/* Styling for the Mega Menu Columns */
+.Website-Mega-Menu .Website-Mega-Menu-Contents .Website-Mega-Menu-Columns {
+    width: 30%;
+    margin-right: 35px;
+    line-height: 50px;
+}
+
+/* Styling for the image within the Mega Menu Columns */
+.Website-Mega-Menu-Contents .Website-Mega-Menu-Columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Styling for the h1 tag including its font size and text color */
+.Website-Mega-Menu-Contents .Website-Mega-Menu-Columns h1 {
+    color: white;
+    font-size: 29px;
+}
+
+/* Styling to add margin */
+.Website-Mega-Menu-Contents .Website-Mega-Menu-Columns .Website-Mega-Menu-Links {
+    margin-left: -20px;
+    border-left: 3px solid rgba(255, 255, 255, 0.174);
+}
+
+/* Styling to make the links as block elements */
+.Website-Mega-Menu-Columns .Website-Mega-Menu-Links li a {
+    display: block;
+    padding: 0 25px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Styling to change the color and background when hovered */
+.Website-Mega-Menu-Columns .Website-Mega-Menu-Links li a:hover { 
+    color: white;
+    background-color: #3d375b;
+}
+
+/* Styling for the buttons */
+.Navigation-Menu-Container .btn {
+    display: none;
+    font-size: 50px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.Navigation-Menu-Container .btn.Responsive-Close-Button {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+/* Styling for the website caption */
+.Website-Caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    font-size: 55px;
+    text-align: center;
+    background-color: rgba(40, 36, 60, 0.8); 
+    color: white;
+    padding: 50px 20px; 
+    border-radius: 10px; 
+}
+
+/* Styling for the horizontal line within the Website-Caption container */
+.Website-Caption hr { 
+    border: 1px solid white;
+    margin: 20px 0;
+}
+
+/* Styling for the Footer */
+footer {
+    position: absolute;
+    color: white;
+    background-color: #28243c; 
+    text-align: center;
+    bottom: -6.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; 
+    padding: 20px; 
+}
+
+/* Media Queries */
+/* Media Query to style viewports that are 1024px and Below */
+@media screen and (max-width: 1024px) {
+    /* This is to unveil the responsive menu button to open the navigation menu */
+      .Navigation-Menu-Container .btn {
+      display: block;
+    }
+
+    /* Styling for the Navigational links */
+    .Navigation-Menu-Container .Navigation-Menu-Links {
+      position: fixed;
+      display: block;
+      background: #28243c;
+      padding: 50px 10px;
+      height: 100vh;
+      width: 100%;
+      max-width: 400px;
+      top: 0;
+      left: -100%;
+      line-height: 50px;
+      overflow-y: auto;
+      box-shadow: 0px 15px 15px rgba(5, 2, 2, 0.71);
+      transition: all 0.7s ease;
+    }
+
+    /* To unveil the navigation menu when the responsive menu button is clicked or checked */
+    #Responsive-Menu-Button:checked ~ .Navigation-Menu-Links {
+      left: 0%;
+    }
+
+    /* To hide the menu button when the menu is unveiled or open */
+    #Responsive-Menu-Button:checked ~ .btn.Responsive-Menu-Button {
+      display: none;
+    }
+
+    /* To unveil the close button when the menu is open */
+    #Responsive-Close-Button:checked ~ .btn.Responsive-Menu-Button {
+      display: block;
+    }
+
+     /* Styling for the navigation menu list items */
+    .Navigation-Menu-Links li{
+      margin: 50px 5px;
+    }
+
+     /* Styling for the navigational menu links */
+    .Navigation-Menu-Links li a{
+      display: block;
+      padding: 0 20px;
+      font-size: 30px;
+    }
+
+    /* Styling for the dropdown menu under within the "Contact Us" Section */
+    .Navigation-Menu-Links .ContactUs-DropDownMenu {
+      opacity: 1;
+      overflow: hidden;
+      visibility: visible;
+      max-height: 0px;
+      box-shadow: none;
+    }
+
+    /* This unveils the dropdown menu when clicked or checked */
+    #ContactUs:checked ~ .ContactUs-DropDownMenu,
+    #Programmes:checked ~ .Website-Mega-Menu {
+      max-height: 100%;
+  }
+
+   /* Unveils the mega menu for "Student Life" when clicked or checked */
+  #StudentLife:checked ~ .Website-Mega-Menu {
+      max-height: 100%;
+  }
+
+  /* This hides the website section title */
+    .Navigation-Menu-Links .Website-Section-Title {
+      display: none;
+    }
+    
+    /* Styling for the responsive view button */
+    .Navigation-Menu-Links .Responsive-View {
+      display: block;
+      color: white;
+      font-size: 30px;
+      padding-left: 20px;
+      cursor: pointer;
+    }
+
+    /* On hover effect that changes background color */
+    .Navigation-Menu-Links .Responsive-View:hover {
+      background-color: #3d375b;
+    } 
+
+     /* Styling for the dropdown menu list items that removes the margin*/
+    .ContactUs-DropDownMenu li {
+      margin: 0;
+    }
+
+    /* Styling for the anchor tags within the ContactUs-DropDownMenu list container, which sets the font size */
+    .ContactUs-DropDownMenu li a {
+      font-size: 19px;
+    }
+
+    /* Styling for the Mega Menu */
+    .Website-Mega-Menu {
+      position: static;
+      visibility: visible;
+      padding: 0 10px;
+      opacity: 1;
+      max-height: 0px;
+      overflow: hidden;
+    }
+
+    /* Styling for the contents within the Mega Menu */
+    .Website-Mega-Menu .Website-Mega-Menu-Contents {
+      box-shadow: none;
+      flex-direction: column;
+      padding: 10px 10px 0 10px;
+    }
+
+    /* Styling for the columns within the Mega Menu */
+    .Website-Mega-Menu .Website-Mega-Menu-Contents .Website-Mega-Menu-Columns {
+      width: 100%;
+    }
+
+    /* Styling for the links within the Mega Menu */
+    .Website-Mega-Menu-Contents .Website-Mega-Menu-Columns .Website-Mega-Menu-Links {
+      border-left: 0px;
+      padding-left: 15px;
+    }
+
+    /* Styling for the  Mega Menu links */
+    .Website-Mega-Menu-Columns .Website-Mega-Menu-Links li {
+      margin: 0;
+    }
+
+    /* Styling for the header 1 within the Mega Menu Column */
+    .Website-Mega-Menu-Contents .Website-Mega-Menu-Columns h1 {
+      font-size: 19px;
+    }
+}
+
+/* Media Query to style viewports that are 768px and Below */
+  @media screen and (max-width: 768px) {
+    /* Styling for the width and padding */
+    .Website-Caption {
+      width: 90%;
+      padding: 40px 15px;
+    }
+
+    /* Styling for the p tag, including setting its font size */
+    .Website-Caption p{
+      font-size: 40px; 
+    }
+}
