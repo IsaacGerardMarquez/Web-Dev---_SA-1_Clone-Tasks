@@ -1,0 +1,256 @@
+/* Styling for the entire body including its background color - a shade of gray (e5e6e8)*/
+body {
+    background-color: #e5e6e8;
+}
+
+/* This styles the main container for the product page making it use grid layout */
+.Product-Page-Container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 65% and 35% layout */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* This styles the "Product-Page-Column-Image" container that positions them on the left */
+.Product-Page-Column-Image {
+    position: relative;
+}
+
+/* This styles the images within the "Product-Page-Column-Image" container including their size and position */
+.Product-Page-Column-Image img {
+    position: absolute;
+    width: 400px;
+    margin-left: 150px;
+    height: auto;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.9s ease;
+}
+
+/* Styling for the selected or active image within the "Product-Page-Column-Image" which shows or unveils the active image */
+.Product-Page-Column-Image img.active {
+    opacity: 1;
+}
+
+/* Styling for the h1 or heading tag within the iPhone-16-Description container including their size and color */
+.iPhone-16-Description h1 {
+    font-size: 60px;
+    color: #28292a;
+}
+
+/* Styling for the p or paragraph tag within the iPhone-16-Description container including their size, color, and line height */
+.iPhone-16-Description p {
+    font-size: 17px;
+    color: rgb(3, 3, 3);
+    line-height: 20px;
+}
+
+/* Styling for the p or paragraph tag within the iPhone-16-Color container including their size, color, and margin */
+.iPhone-16-Color p {
+    display: inline-block;
+    font-size: 16px;
+    color: #28292a99;
+    margin-bottom: 10px;
+}
+
+/* Styling for the p or paragraph tag within the iPhone-16-Storage-Capactiy container including their size, color, and margin */
+.iPhone-16-Storage-Capactiy p {
+    display: inline-block;
+    font-size: 16px;
+    color: #28292a99;
+    margin-bottom: 10px;
+}
+
+/* Styling for the iPhone-16-Color container that adds a bottom margin */
+.iPhone-16-Color {
+    margin-bottom: 20px;
+}
+
+/* Styling that positions the color options inline */
+.iPhone-16-Color-Variants div {
+    display: inline-block;
+}
+
+/* Styling that hides the products other color variants or options */
+.iPhone-16-Color-Variants input[type="radio"] {
+    display: none;
+}
+
+/* This is the styling for the color option labels or buttons responsible for their size, position, and shape */
+.iPhone-16-Color-Variants input[type="radio"] + label div {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* I added an on hover effect to the color option labels or buttons */
+.iPhone-16-Color-Variants div:hover input[type="radio"] + label div {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.762); 
+}
+
+/* Gives the color option labels or buttons a blue color  */
+.iPhone-16-Color-Variants input[type="radio"]#blue + label div {
+    background-color: #96a8e6;
+}
+
+/* Gives the color option labels or buttons a green color  */
+.iPhone-16-Color-Variants input[type="radio"]#green + label div {
+    background-color: #a9cdcb;
+}
+
+/* Gives the color option labels or buttons a pink color  */
+.iPhone-16-Color-Variants input[type="radio"]#pink + label div {
+    background-color: #e7aad3;
+}
+
+/* Gives the color option labels or buttons a white color  */
+.iPhone-16-Color-Variants input[type="radio"]#white + label div {
+    background-color: white;
+}
+
+/* Gives the color option labels or buttons a black color  */
+.iPhone-16-Color-Variants input[type="radio"]#black + label div {
+    background-color: black;
+}
+
+
+/* This styles the button within the iPhone-16-Storage-Options container including its color, size, position, and shape */
+.iPhone-16-Storage-Options button {
+    color: #28292a;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 15px 10px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+/* Styles the on hover, active, and focus states for the storage option buttons including making it bigger or adding a border color */
+.iPhone-16-Storage-Options button:hover,
+.iPhone-16-Storage-Options button:active,
+.iPhone-16-Storage-Options button:focus {
+    transform: scale(1.05);
+    border: 1px solid #28292a;
+}
+
+/* Adds a bottom margin to the iPhone-16-Storage-Capactiy container */
+.iPhone-16-Storage-Capactiy {
+    margin-bottom: 30px;
+}
+
+/* This styles the Product-Page-Price container */
+.Product-Page-Price {
+    display: flex;
+    align-items: center;
+}
+
+/* This styles the p or paragraph tag within the Product-Page-Price container including their size, color, and margin */
+.Product-Page-Price p {
+    font-size: 30px;
+    color: #28292a;
+    margin-right: 20px;
+}
+
+/* This styles the purchase button */
+.Product-Page-Price button{
+    display: inline-block;
+    font-size: 19px;
+    color: white;
+    background-color: #28292a99;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+    transition: all .9s;
+}
+
+/* This styles the on hover effect of the purchase button */
+.Product-Page-Price button:hover {
+    background-color: #28292a; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+
+}
+
+/* Media Queries */
+/* Media query for screens that has a maximum width of 940px */
+@media (max-width: 940px) {
+    .Product-Page-Container {
+        /* This is to stack them in a single column */
+        grid-template-columns: 1fr;
+    }
+
+    /* This styles the images including its size, position, and hiding it at first*/
+    .Product-Page-Column-Image img {
+        width: 200px; 
+        right: 0; 
+        top: 85px;
+        left: initial;
+            opacity: 0; 
+    }
+
+    /* This styles the paragraph or p tag adding a right margin */
+    .iPhone-16-Description p {
+        margin-right:250px;
+    }
+
+    /* This unveils the image when active */
+    .Product-Page-Column-Image img.active {
+        opacity: 1;
+    }
+}
+
+/* Media query for screens that has a maximum width of 510px */
+@media (max-width: 510px) {
+    /* This styles the paragraph or p tag adding a right margin */
+    .iPhone-16-Description p {
+        margin-right:200px;
+    }
+
+    /* This styles the images including its size, position, and hiding it at first*/
+    .Product-Page-Column-Image img {
+        width: 180px; 
+        top: 150px;
+        opacity: 0; 
+    }
+
+}
+
+/* Media query for screens that has a maximum width of 376px */
+@media (max-width: 376px) {
+    /* This styles the paragraph or p tag adding a right margin */
+    .iPhone-16-Description p {
+        margin-right:200px;
+        font-size: 12px;
+    }
+
+    /* This styles the images including its size, position, and hiding it at first*/
+    .Product-Page-Column-Image img {
+        width: 180px; 
+        top: 200px;
+        opacity: 0; 
+    }
+
+}
+
+/* Media query for screens that has a maximum width of 321px */
+@media (max-width: 321px) {
+    /* This styles the paragraph or p tag adding a right margin */
+    .iPhone-16-Description p {
+        margin-right:160px;
+        font-size: 10px;
+    }
+
+    /* This styles the images including its size, position, and hiding it at first*/
+    .Product-Page-Column-Image img {
+        width: 150px; 
+        top: 200px;
+        opacity: 0; 
+    }
+
+}
