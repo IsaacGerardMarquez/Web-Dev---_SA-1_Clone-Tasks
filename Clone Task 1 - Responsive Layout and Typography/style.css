@@ -87,6 +87,7 @@ h1, h2 {
 /* I removed the default margin of the h2 tag within the ".Heading-Item-Container" container */
 .Heading-Item-Container h2 {
     margin: 0; 
+    margin-top: 10px;
 }
 
 /* I also removed the default margin of the p tag within the ".Heading-Item-Container" container and aligned them to the left. */
