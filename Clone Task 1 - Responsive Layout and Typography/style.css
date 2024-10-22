@@ -56,6 +56,11 @@ h1, h2 {
     font-size: calc(3 * 1rem); /* Font-size three times larger than the default font size. */
 }
 
+/* This is to add the gray border or outline. */
+main {
+    border: 1px solid gray; 
+}
+
 /* This is to set a White Content Background Colour to the container named ".Main-Heading-Container". */
 .Main-Heading-Container {
     background-color: white; /* White Content Background Colour */
