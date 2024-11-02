@@ -1,0 +1,544 @@
+// SCSS Variables for Styling
+
+/* Margins, gaps, and paddings */
+$small-spacing: 16px;
+$mobile-large-spacing: 16px;
+$tablet-large-spacing: 32px;
+$desktop-large-spacing: 48px;
+
+/* Colors */
+$black-color: #070410; 
+$dark-blue-color: #231651;
+$teal-color: #4DCCBD;
+$yellow-color: #EEF36A;
+$white-color: #FFFFFF;
+
+
+/* I imported the "Lato" and "Teko" fonts from Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
+/* This is to reset the default margin and padding for all elements. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* I used the "Lato" font as the default font for the entire body. I also used a gradient background color for the body that goes from teal to dark blue. */
+body {
+  font-family: 'Lato';
+  background: linear-gradient(150deg, $teal-color, $dark-blue-color);
+}
+
+/* I set the "Teko" font to be used for all the h1 or heading 1 tag. */
+h1 {
+  font-family: 'Teko';
+}
+
+/* I also set the "Teko" font to be used for all the buttons. */
+button {
+  font-family: 'Teko';
+}
+
+
+/* Styling for the Navigation Menu */
+/* To style the navigation menu, I used a Flexbox layout, distributed its items evenly using space-between, center-aligning its items, setting both its background and text color, and adding a box shadow below it. */
+.Navigation-Menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white-color;
+  background: linear-gradient(400deg, $dark-blue-color, $yellow-color);
+  box-shadow: 0 10px 5px $yellow-color;
+}
+
+/* Styling for the Logo */
+/* I set the "Teko" font to be used for the Logo. */
+.WATCH-IT-LOGO {
+  font-family: 'Teko';
+}
+
+/* This is to hide the Navigation links by default. They would be shown or unveiled later in Media Queries. */
+.Navigation-Menu-Links {
+  display: none;
+}
+
+/* This styles the Navigation links by removing their default underline, using "Lato" as its font, and setting its text color to #ffffff. */
+.Navigation-Menu-Links a {
+  font-family: 'Lato';
+  color: $white-color;
+  text-decoration: none;
+}
+
+/* Styling for the Search Button */
+/* I set the "Teko" font to be used as the font and 2em as font size for the Search button. I also styles its text color, background color, padding, and border radius. */
+.Search-Button {
+  font-family: 'Teko';
+  color: $white-color;
+  font-size: 2em;
+  background: linear-gradient(150deg, $dark-blue-color, $black-color);
+  padding: 1px 15px; 
+  border-radius: 10px;
+  border: 2px solid $teal-color; 
+  cursor: pointer;
+}
+   
+
+/* Media Queries for Responsiveness*/
+
+/* MOBILE */
+/* Media Query for Mobile (Viewport with Widths of 360px to 720px) */
+@media (min-width: 360px) and (max-width: 720px) {
+
+  /* HEADER */
+  /* I set the header to use font size "2em" on mobile and added small spacing padding (16px). */
+  header {
+    font-size: 2em;
+    padding: $small-spacing;
+  }
+
+  /* I set the Logo to have 2em as its font size when viewed on a mobile or 360 to 720 pixels. */
+  .WATCH-IT-LOGO {
+    font-size: 2em;
+  }
+
+  /* I used large spacing between the navigation options.  */
+  .Navigation-Menu-Links {
+    gap: $mobile-large-spacing;
+  }
+
+  /* MAIN CONTENT CONTAINER */
+  /* This is the styling used for the Main Content Container's lay out. I used a grid lay out and made it have 1 column and 6 equal rows. I also set its max width to 900 pixels and added 16 pixels of bottom margin.*/
+  .Main-Content-Container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 1 Column */
+    grid-template-rows: repeat(6, auto); /* 6 Equal Rows */
+    max-width: 900px;
+    margin-bottom: $mobile-large-spacing;
+}
+
+  /* RECTANGLE MOVIE CONTAINER */
+  /* This styles the "Rectangle-Movie-Container" container. I used a flexbox lay out for the container, stacked the items vertically with the use of column, aligned them in the center, and set a white background color. I also added 16 pixels of top margin. */
+  .Rectangle-Movie-Container {
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    height: auto; 
+    background-color: $white-color; 
+    margin-top: $small-spacing;
+  }
+
+  /* This is the styling to ensure that the images take the full width. */
+  .Rectangle-Movie-Thumbnail-Image {
+    width: 100%; 
+    height: auto;
+    object-fit: contain; 
+    display: block;
+    margin: 0; 
+    padding: 0;
+  }
+
+
+  /* Styling for the buttons */
+  /* I set the button's font size to 2em, gave it gradient dark blue to teal color, 16 pixels of padding, white text color, 2 pixels of border, 15 pixels border radius or corner roundness, and made sure that it is full width in a container. */
+  .Movie-1-Watch-Now-Button, .Movie-2-and-3-Watch-Now-Button, .Movie-4-5-and-6-Watch-Now-Button {
+    font-size: 2em;
+    padding: $small-spacing; 
+    color: $white-color;
+    background: linear-gradient(135deg, $dark-blue-color, $teal-color);
+    border: 2px solid $dark-blue-color; 
+    border-radius: 15px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  /* VERTICAL MOVIE CONTAINER */
+  /* This uses a block lay out for the "Vertical Boxes Container" container to make sure that it is stacked vertically. */
+  .Vertical-Movie-Container {
+    display: block; 
+  }
+
+  /* This uses a flexbox to create a vertical lay out. I also centered and stacked its items vertically using align-items:center and column.  */
+  .Vertical-Movie-Container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: $white-color; 
+    width: 100%;
+    margin-top: $small-spacing; 
+  }
+
+
+  /* HORIZONTAL MOVIE CONTAINER */
+  /* This styles the "Horizontal-Movie-Container" container by using a flexbox lay out again and stacked its items vertically using column. I also made sure that its items are aligned in the center. */
+  .Horizontal-Movie-Container {
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden;
+    align-items: center; 
+    background-color: $white-color; 
+    margin-top: $small-spacing; 
+  }
+
+  /* This styling is used to ensure that the images within their containers take the full width. */
+  .Rectangle-Movie-Thumbnail-Image,
+  .Vertical-Movie-Thumbnail-Image,
+  .Horizontal-Movie-Thumbnail-Image {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+  }
+
+  /* I used a flexbox lay out once again and used column to stack the items inside the containers vertically. I also made sure that the movie containers use font size "1.5em".*/
+  .Rectangle-Movie-Description-Container, .Horizontal-Movie-Description-Container, .Vertical-Movie-Description-Container {
+    display: flex; 
+    flex-direction: column; 
+    font-size: 1.5em;
+    padding: $small-spacing;
+    gap: $small-spacing; 
+  }
+
+  /* I used a flexbox lay out for the button, centered it, pushed it to the very bottom of the container, and ensured that it would take full width. */
+  .Vertical-Movie-Watch-Now-Button-Container {
+    display: flex; 
+    justify-content: center; 
+    margin-top: auto; 
+    width: 100%; 
+  }
+
+  /* This is to keep the word "NOW" on the same line when viewed on a mobile. */
+  .Movie-1-Watch-Now-Button .Now-New-Line {
+    display: inline; 
+  }
+}
+
+
+/* TABLET */
+/* Media Query for Tablet (Viewport with Widths of 360px to 720px) */
+@media (min-width: 720px) and (max-width: 1023px) {
+
+  /* HEADER */
+  /* I set the header's padding to 16 pixels. */
+  header {
+    padding: $small-spacing;
+  }
+
+  /* I set the Logo to have 3em as its font size when viewed on a tablet or 720 to 1023 pixels. */
+  .WATCH-IT-LOGO {
+    font-size: 3em;
+  }
+
+  /* I used large spacing between the navigation options.  */
+  .Navigation-Menu-Links {
+    gap: $tablet-large-spacing;
+    display: flex;
+  }
+
+  /* MAIN CONTENT CONTAINER */
+  /* This is the styling used for the Main Content Container's lay out. I used a grid lay out and made it have 2 equal columns. I also gave it 36 pixels of gap and padding, and set its max width to 900 pixels. I also made sure that the items are center aligned.*/
+  .Main-Content-Container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Equal Columns */
+    max-width: 900px;
+    gap: $tablet-large-spacing; 
+    margin: 0 auto; 
+    padding: $tablet-large-spacing;
+  }
+
+  /* I added a dark blue shadow to the 3 Movie Containers. */
+  .Movie-1-Container, .Movie-2-Container, .Movie-3-Container {
+    box-shadow: 16px 16px 12px $dark-blue-color; 
+  }
+  
+  /* I added a teal shadow to the other 3 Movie Containers. */
+  .Movie-4-Container, .Movie-5-Container, .Movie-6-Container {
+    box-shadow: 16px 16px 12px $teal-color; 
+  }
+
+  /* I styled all the 3 movie containers by using flexbox to lay out them, column to stack its items vertically, and space-between to allow the items to fill space. I also used "1.5 em" as the font size for the containers. In additon, I set the container's background color to white.*/
+  .Vertical-Movie-Container,
+  .Horizontal-Movie-Container,
+  .Rectangle-Movie-Container {
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    font-size: 1.5em;
+    background-color: $white-color;
+    height: 100%; 
+  }
+
+  /* This is the styling to ensure that the images take the full width and keep their aspect ratio. */
+  .Rectangle-Movie-Thumbnail-Image,
+  .Vertical-Movie-Thumbnail-Image,
+  .Horizontal-Movie-Thumbnail-Image {
+    width: 100%; 
+    height: auto; 
+  }
+
+  /* This styles the description for their respective movie containers, specifically its content's positioning. I used a flexbox lay out, set the flex-grow to 1 to allow the text to expand, colum to stack the text and button vertically, space between to position the button at the bottom, and 16 pixels of padding.*/
+  .Rectangle-Movie-Description-Container,
+  .Vertical-Movie-Description-Container,
+  .Horizontal-Movie-Description-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    flex-grow: 1; 
+    padding: $small-spacing;
+  }
+
+  /* BUTTONS */
+  /* This styles the button to have "2em" as its font size, white color for its text color, a gradient background color, 16 pixels of padding, and 15 pixels of border radius or rounded corners. */
+  .Movie-1-Watch-Now-Button,
+  .Movie-4-5-and-6-Watch-Now-Button {
+    font-size: 2em; 
+    padding: $small-spacing; 
+    color: $white-color;
+    background: linear-gradient(135deg, $dark-blue-color, $teal-color);
+    border-radius: 15px; 
+    margin-top: $small-spacing; 
+    line-height: 1;
+    border: 2px solid $dark-blue-color; 
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+
+  /* These are additional styling for the button including its font size, text color, background color, padding, rounded corners, and positioning.  */
+  .Movie-2-and-3-Watch-Now-Button {
+    font-size: 2em; 
+    padding: $small-spacing; 
+    color: $white-color;
+    background: linear-gradient(135deg, $dark-blue-color, $teal-color);
+    border: 2px solid $dark-blue-color; 
+    border-radius: 15px;
+    width: 100%;
+    line-height: 1; /* To make the words "WATCH" and "NOW" closer together. */
+    margin-top: $small-spacing;
+    cursor: pointer;
+  }
+
+  /* The display:block ensures that the word "NOW" is below the word "WATCH". */
+  .Now-New-Line {
+    display: block; /* Move "NOW" below "WATCH" */
+  }
+}
+
+
+/* DESKTOP */
+/* Media Query for Desktops (Viewport with Width of 1024px and up) */
+@media (min-width: 1024px) {
+
+  /* HEADER */
+  /* I set a small spacing padding (16px) for the header. */
+  header {
+    padding: $small-spacing;
+  }
+
+  /* I set the Logo to have 3em as its font size when viewed on a Desktop or 1024 pixels. */
+  .WATCH-IT-LOGO {
+    font-size: 3em;
+  }
+
+  /* I used large spacing between the navigation options.  */
+  .Navigation-Menu-Links {
+    display: flex;
+    gap: $desktop-large-spacing;
+  }
+
+  /* MAIN CONTENT CONTAINER */
+  /* I made that the main container's maximum width is 900 pixels and has 48 pixels of padding. I also used a grid lay out that has 2 equal width columns.  */
+  .Main-Content-Container {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Equal Columns */
+    grid-auto-rows: minmax(100px, auto); 
+    gap: $desktop-large-spacing;
+    margin: 0 auto; 
+    padding: $desktop-large-spacing;
+}
+
+  /* 1st Movie (Who Framed Roger Rabbit) */
+  /* This styles the "Movie-1-Container" container so that it would span both grid columns to occupy the full width of the container. */
+  .Movie-1-Container {
+    grid-column: 1 / -1;
+  }
+
+  /* This styles the "Rectangle-Movie-Container" container to have "1.5" as its font size, white background color, and a dark blue shadow. */
+  .Rectangle-Movie-Container {
+    font-size: 1.5em;
+    background-color: $white-color;
+    max-width: 100%; 
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative; 
+    box-shadow: 16px 16px 12px $dark-blue-color; 
+  }
+
+  /* This is the styling to ensure that the images take the full width and keep their aspect ratio. */
+  .Rectangle-Movie-Thumbnail-Image {
+    width: 100%; 
+    height: auto; 
+    max-height: 300px; 
+    object-fit: cover;
+  }
+
+  /* I used a flexbox lay out for the container, used space-between to position the button away from the text, and stretch to ensure that both the text and button have the same height. */
+  .Rectangle-Movie-Description-Container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: stretch;
+    padding: $small-spacing; 
+  }
+
+  /* The container uses a flexbox lay out. This is to ensure that the text would take the remaining space. This styling is also responsible for its positioning. */
+  .Rectangle-Movie-Description-Texts {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    margin-right: $small-spacing; 
+  }
+
+  /* This styling is responsible for its "2em" font size, white text color, gradient background color, rounded corners, and its positioning. */
+  .Movie-1-Watch-Now-Button {
+    padding: $small-spacing;
+    font-size: 2em; 
+    color: $white-color;
+    background: linear-gradient(135deg, $dark-blue-color, $teal-color);
+    border: 2px solid $dark-blue-color; 
+    border-radius: 15px;
+    align-items: center; 
+    justify-content: center; 
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  /* The display:block ensures that the word "NOW" is below the word "WATCH". */
+  .Movie-1-Watch-Now-Button .Now-New-Line {
+    display: block; /* Move NOW to the next line */
+  }
+
+  /* 2nd Movie (Hook) */
+  /* Both the 2nd and 3rd Movies' containers span one grid column each, ensuring that they are positioned side-by-side. Both of them also have a white background color. */
+  .Movie-2-Container {
+    grid-column: 1 / 2;
+    background-color: $white-color;
+  }
+
+  /* 3rd Movie (La La Land) */
+  .Movie-3-Container {
+    grid-column: 2 / 3;
+    background-color: $white-color;
+  }
+
+
+  /* Both Movie-2-Container and Movie-3-Container containers used a flexbox lay out and stretch to align the contents vertically. A white background color is also used. */
+  .Movie-2-Container, .Movie-3-Container {
+    display: flex;
+    align-items: stretch; 
+    background-color: $white-color;
+  }
+
+  /* This styling sets "1.5em" as its font size and adds a dark blue shadow to the container. The container also uses a flexbox lay out to align the items vertically. */
+  .Vertical-Movie-Container {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    width: 100%;
+    padding: 0;
+    height: 100%; 
+    box-shadow: 16px 16px 12px $dark-blue-color; 
+  }
+
+  /* This is the styling to ensure that the images take the full width and keep their aspect ratio. */
+  .Vertical-Movie-Thumbnail-Image {
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  /* This styling is responsible for the text's lay out in vertical containers. It has 16 pixels of padding. */
+  .Vertical-Movie-Description-Container {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding: $small-spacing;
+  }
+
+  /* This styling centers the buttons horizontally within the container. */
+  .Vertical-Movie-Watch-Now-Button-Container {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin-top: auto; 
+  }
+
+  /* This styles the Watch Now buttons from the 2nd and 3rd Movie containers such as its padding, font size, text color, gradient background color, rounded corners, and positioning. */
+  .Movie-2-and-3-Watch-Now-Button {
+    padding: $small-spacing; 
+    font-size: 2em; 
+    color: $white-color;
+    background: linear-gradient(135deg, $dark-blue-color, $teal-color);
+    border: 2px solid $dark-blue-color; 
+    border-radius: 15px; 
+    margin-top: $small-spacing;
+    width: 100%;
+    cursor: pointer; 
+  }
+
+  /* The Movie containers from the 4th to the 6th movie all spans the entire width of the grid. */
+  /* 4th Movie (Hidden Figures) */
+  .Movie-4-Container {
+    grid-column: 1 / -1;
+  }
+
+  /* 5th Movie (Palm Springs) */
+  .Movie-5-Container {
+    grid-column: 1 / -1;
+  }
+
+  /* 6th Movie (Barbie) */
+  .Movie-6-Container {
+    grid-column: 1 / -1;
+  }
+
+  /* The "Horizontal-Movie-Container" sets the font size to "1.5em", white background color, teal shadow, and container uses a flexbox lay out.*/
+  .Horizontal-Movie-Container {
+    font-size: 1.5em;
+    display: flex;
+    background-color: $white-color; 
+    overflow: hidden;
+    box-shadow: 16px 16px 12px $teal-color; 
+  }
+
+  /* This ensures that the image occupies half the container width while still maintaining its aspect ratio. */
+  .Horizontal-Movie-Thumbnail-Image {
+    width: 50%; 
+    height: auto; 
+    object-fit: cover; 
+  }
+
+  /* This styles the positioning and lay out of the containers contents vertically and centered with the use of flexbox. 16 pixels of padding and gap is also used. */
+  .Horizontal-Movie-Description-Container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    padding: $small-spacing; 
+    gap: $small-spacing; 
+  }
+
+  /* The remaining Watch Now buttons for the 4th to 6th movies have 16 pixels of padding, "2em" of font size, white text color, gradient background color, and rounded corners. */
+  .Movie-4-5-and-6-Watch-Now-Button {
+    padding: $small-spacing;
+    font-size: 2em;
+    color: $white-color;
+    background: linear-gradient(135deg, $dark-blue-color, $teal-color);
+    border: 2px solid $dark-blue-color; 
+    border-radius: 15px;
+    margin-top: $small-spacing;
+    cursor: pointer;
+  }
+}
