@@ -3,7 +3,7 @@
 
 /* This is the global styling used for the base lay-out and typography. */
 body {
-    font-family: 'Josefin Sans', sans-serif; /* Josefin Sans Font Family*/
+    font-family: 'Josefin Sans'; /* Josefin Sans Font Family*/
     background-color: #e9e9e9; /* The Page Background Colour */
     margin: 0;
     padding: 0;
