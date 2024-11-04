@@ -381,7 +381,7 @@ footer {
   }
 }
 /* Media Query for Small Mobiles (Viewport Width - 360px to 539px) */
-@media (max-width: 539px) {
+@media (min-width: 360px) and (max-width: 539px) {
   /* Logo */
   /* This sets the image or Logo size to 80 pixels. 12 pixels of top margin is also set. */
   .Logo img {
