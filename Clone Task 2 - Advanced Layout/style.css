@@ -72,7 +72,6 @@ button {
   /* HEADER */
   /* I set the header to use font size "2em" on mobile and added small spacing padding (16px). */
   header {
-    font-size: 2em;
     padding: 16px;
   }
   /* I set the Logo to have 2em as its font size when viewed on a mobile or 360 to 720 pixels. */
