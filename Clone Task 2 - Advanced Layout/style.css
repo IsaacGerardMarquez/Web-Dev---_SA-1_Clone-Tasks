@@ -70,7 +70,7 @@ button {
 /* Media Query for Mobile (Viewport with Widths of 360px to 720px) */
 @media (min-width: 360px) and (max-width: 720px) {
   /* HEADER */
-  /* I set the header to use font size "2em" on mobile and added small spacing padding (16px). */
+  /* I added small spacing padding (16px). */
   header {
     padding: 16px;
   }
