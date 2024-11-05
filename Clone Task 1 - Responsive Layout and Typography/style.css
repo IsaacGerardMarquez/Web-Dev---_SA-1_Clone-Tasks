@@ -95,10 +95,9 @@ main {
   margin-top: 10px;
 }
 
-/* I also removed the default margin of the p tag within the ".Heading-Item-Container" container and aligned them to the left. */
+/* I aligned the p tag or paragraph within ".Heading-Item-Container" to the left. */
 .Heading-Item-Container p {
   text-align: left;
-  margin: 0;
 }
 
 /* Images Section */
@@ -272,6 +271,10 @@ footer {
     -moz-column-gap: 30px;
          column-gap: 30px;
   }
+  .Heading-Item-Container p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
   /* Images Section */
   /* A grid lay-out is used and stacked the images into one column. 30 pixels of gap was also set to give space between the images. */
   .Images-Main-Container {
@@ -342,6 +345,10 @@ footer {
          column-count: 1;
     -moz-column-gap: 20px;
          column-gap: 20px;
+  }
+  .Heading-Item-Container p {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   /* Images Section */
   /* A grid lay-out is used and stacked the images into one column. 20 pixels of gap was also set to give space between the images. */
@@ -414,6 +421,10 @@ footer {
          column-count: 1;
     -moz-column-gap: 12px;
          column-gap: 12px;
+  }
+  .Heading-Item-Container p {
+    margin-top: 12x;
+    margin-bottom: 12px;
   }
   /* Images Section */
   /* A grid lay-out is used and stacked the images into one column. 12 pixels of gap was also set to give space between the images. */
