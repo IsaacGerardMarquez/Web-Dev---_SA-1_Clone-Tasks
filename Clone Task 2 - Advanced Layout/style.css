@@ -70,13 +70,15 @@ button {
 /* Media Query for Mobile (Viewport with Widths of 360px to 720px) */
 @media (min-width: 360px) and (max-width: 720px) {
   /* HEADER */
-  /* I added small spacing padding (16px). */
+  /* I set the font size to "2em" and added small spacing padding (16px). */
   header {
+    font-size: 2em;
     padding: 16px;
   }
-  /* I set the Logo to have 2em as its font size when viewed on a mobile or 360 to 720 pixels. */
+  /* I set the Logo to have 2em as its font size and right margin for spacing when viewed on a mobile or 360 to 720 pixels. */
   .WATCH-IT-LOGO {
     font-size: 2em;
+    margin-right: 16px;
   }
   /* I used large spacing between the navigation options.  */
   .Navigation-Menu-Links {
