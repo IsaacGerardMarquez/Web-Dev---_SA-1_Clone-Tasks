@@ -173,8 +173,8 @@ footer {
 }
 
 /* Media Queries for Responsiveness*/
-/* Media Query for Desktops (Viewport Width - 1024px and up) */
-@media (min-width: 1024px) {
+/* Media Query for Desktops (Viewport Width - 1025px and up) */
+@media (min-width: 1025px) {
   /* Body */
   /* This centers the body and sets a fixed width of 1024 pixels. */
   body {
@@ -228,8 +228,8 @@ footer {
     padding: 50px;
   }
 }
-/* Media Query for Tablets (Viewport Width - 720px to 1023px) */
-@media (min-width: 720px) and (max-width: 1023px) {
+/* Media Query for Tablets (Viewport Width - 721px to 1024px) */
+@media (min-width: 721px) and (max-width: 1024px) {
   /* Body */
   /* This centers the body and sets a fixed width of 720px pixels. */
   body {
@@ -307,8 +307,8 @@ footer {
     padding: 30px;
   }
 }
-/* Media Query for Large Mobiles (Viewport Width - 540px to 719px) */
-@media (min-width: 540px) and (max-width: 719px) {
+/* Media Query for Large Mobiles (Viewport Width - 541px to 720px) */
+@media (min-width: 541px) and (max-width: 720px) {
   /* Logo */
   /* This sets the image or Logo size to 80 pixels. 20 pixels of top margin is also set. */
   .Logo img {
@@ -387,8 +387,8 @@ footer {
     padding: 20px;
   }
 }
-/* Media Query for Small Mobiles (Viewport Width - 360px to 539px) */
-@media (min-width: 360px) and (max-width: 539px) {
+/* Media Query for Small Mobiles (Viewport Width - 360px to 540px) */
+@media (min-width: 360px) and (max-width: 540px) {
   /* Logo */
   /* This sets the image or Logo size to 80 pixels. 12 pixels of top margin is also set. */
   .Logo img {
