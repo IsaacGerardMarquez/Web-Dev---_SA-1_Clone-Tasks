@@ -189,7 +189,6 @@ button {
   .Horizontal-Movie-Thumbnail-Image {
     width: 100%; 
     height: auto; 
-    object-fit: cover; 
   }
 
   /* I used a flexbox lay out once again and used column to stack the items inside the containers vertically. I also made sure that the movie containers use font size "1.5em".*/
@@ -381,7 +380,6 @@ button {
     width: 100%; 
     height: auto; 
     max-height: 300px; 
-    object-fit: cover;
   }
 
   /* I used a flexbox lay out for the container, used space-between to position the button away from the text, and stretch to ensure that both the text and button have the same height. */
@@ -456,7 +454,6 @@ button {
   /* This is the styling to ensure that the images take the full width and keep their aspect ratio. */
   .Vertical-Movie-Thumbnail-Image {
     width: 100%;
-    object-fit: cover;
     margin: 0;
   }
 
