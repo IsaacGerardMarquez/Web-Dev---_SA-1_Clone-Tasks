@@ -446,8 +446,6 @@ button {
   .Horizontal-Movie-Thumbnail-Image {
     width: 50%;
     height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   /* This styles the positioning and lay out of the containers contents vertically and centered with the use of flexbox. 16 pixels of padding and gap is also used. */
   .Horizontal-Movie-Description-Container {
