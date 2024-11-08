@@ -121,11 +121,9 @@ button {
   /* RECTANGLE MOVIE CONTAINER */
   /* This styles the "Rectangle-Movie-Container" container. I used a flexbox lay out for the container, stacked the items vertically with the use of column, aligned them in the center, and set a white background color. I also added 16 pixels of top margin. */
   .Rectangle-Movie-Container {
-    overflow: hidden; 
     display: flex; 
     flex-direction: column;
     align-items: center; 
-    height: auto; 
     background-color: $white-color; 
     margin-top: $small-spacing;
   }
