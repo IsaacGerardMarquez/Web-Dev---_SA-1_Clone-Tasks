@@ -451,10 +451,12 @@ button {
     box-shadow: 16px 16px 12px $dark-blue-color; 
   }
 
-  /* This is the styling to ensure that the images take the full width and keep their aspect ratio. */
+  /* This is the styling to ensure that the vertical images would take half of the container. */
   .Vertical-Movie-Thumbnail-Image {
     width: 100%;
-    margin: 0;
+    height: 500px; 
+    object-fit: cover;
+    margin: 0;  
   }
 
   /* This styling is responsible for the text's lay out in vertical containers. It has 16 pixels of padding. */
