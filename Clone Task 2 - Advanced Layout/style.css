@@ -223,12 +223,12 @@ button {
     background-color: #FFFFFF;
     height: 100%;
   }
-  /* This is the styling to ensure that the images take the full width and keep their aspect ratio. */
+  /* This is the styling to ensure that the images would just take 1/3 of the container. */
   .Rectangle-Movie-Thumbnail-Image,
   .Vertical-Movie-Thumbnail-Image,
   .Horizontal-Movie-Thumbnail-Image {
     width: 100%;
-    height: auto;
+    height: 333px;
   }
   /* This styles the description for their respective movie containers, specifically its content's positioning. I used a flexbox lay out, set the flex-grow to 1 to allow the text to expand, colum to stack the text and button vertically, space between to position the button at the bottom, and 16 pixels of padding.*/
   .Rectangle-Movie-Description-Container,
