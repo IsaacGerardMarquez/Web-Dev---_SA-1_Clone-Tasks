@@ -185,8 +185,8 @@ footer {
 
 /* Media Queries for Responsiveness*/
 
-/* Media Query for Desktops (Viewport Width - 1025px and up) */
-@media (min-width: 1025px) {
+/* Media Query for Desktops (Viewport Width - 1024px and up) */
+@media (min-width: 1024px) {
 
     /* Body */
     /* This centers the body and sets a fixed width of 1024 pixels. */
@@ -256,8 +256,8 @@ footer {
 }
 
 
-/* Media Query for Tablets (Viewport Width - 721px to 1024px) */
-@media (min-width: 721px) and (max-width: 1024px) {
+/* Media Query for Tablets (Viewport Width - 720px to 1023px) */
+@media (min-width: 720px) and (max-width: 1023px) {
 
     /* Body */
     /* This centers the body and sets a fixed width of 720px pixels. */
@@ -355,8 +355,8 @@ footer {
 }
 
 
-/* Media Query for Large Mobiles (Viewport Width - 541px to 720px) */
-@media (min-width: 541px) and (max-width: 720px) {
+/* Media Query for Large Mobiles (Viewport Width - 540px to 720px) */
+@media (min-width: 540px) and (max-width: 720px) {
 
     /* Logo */
     /* This sets the image or Logo size to 80 pixels. 20 pixels of top margin is also set. */
