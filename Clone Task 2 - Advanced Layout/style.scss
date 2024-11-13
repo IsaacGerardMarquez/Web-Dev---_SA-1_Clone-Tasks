@@ -87,8 +87,8 @@ button {
 /* Media Queries for Responsiveness*/
 
 /* MOBILE */
-/* Media Query for Mobile (Viewport with Widths of 360px to 720px) */
-@media (min-width: 360px) and (max-width: 720px) {
+/* Media Query for Mobile (Viewport with Widths of 360px to 719px) */
+@media (min-width: 360px) and (max-width: 719px) {
 
   /* HEADER */
   /* I set the font size to "2em" and added small spacing padding (16px). */
@@ -214,8 +214,8 @@ button {
 
 
 /* TABLET */
-/* Media Query for Tablet (Viewport with Widths of 721px to 1024px) */
-@media (min-width: 721px) and (max-width: 1024px) {
+/* Media Query for Tablet (Viewport with Widths of 720px to 1023px) */
+@media (min-width: 720px) and (max-width: 1023px) {
 
   /* HEADER */
   /* I set the header's padding to 16 pixels. */
@@ -324,8 +324,8 @@ button {
 
 
 /* DESKTOP */
-/* Media Query for Desktops (Viewport with Width of 1025px and up) */
-@media (min-width: 1025px) {
+/* Media Query for Desktops (Viewport with Width of 1024px and up) */
+@media (min-width: 1024px) {
 
   /* HEADER */
   /* I set a small spacing padding (16px) for the header. */
