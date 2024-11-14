@@ -38,9 +38,9 @@
             <ul class="Navigational-Links">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About Us</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Sign Up</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#LoginandSignUp">Log In</a></li>
             </ul>
         </div>
 
@@ -93,6 +93,206 @@
         </div>
     </section>
     
+
+    <!-- Product Section -->
+    <div class="Products-Container" id="Products">
+
+        <!-- Products Section Title -->
+        <h1>Products</h1>
+
+        <!-- Occasion selection -->
+        <div class="Occasions-Category">
+          <label for="occasion">Select Occasion:</label>
+          <select id="occasion" name="occasion">
+            <option value="birthday">Birthday</option>
+            <option value="anniversary">Anniversary</option>
+            <option value="valentines">Valentine's Day</option>
+            <option value="easter">Easter</option>
+            <option value="christmas">Christmas</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      
+        <!-- Chocolate Selection -->
+        <div class="Chocolate-Products-Container">
+          <h3>Select the Chocolates you want</h3>
+          <div id="Chocolate-Products-Items">
+            <!-- The chocolate products would be shown here -->
+          </div>
+        </div>
+      
+        <!-- Basket -->
+        <div class="Basket-Container">
+          <h3>Here is your Basket</h3>
+          <ul id="Basket-Selected-Products">
+            <!-- The selected chocolate products will be added here -->
+          </ul>
+
+          <!-- Total Price of the Selected Products -->
+          <p>Your total: $<span id="Total-Price">0</span></p>
+
+          <!-- Purchase Button -->
+          <button id="Purchase-Button">Purchase</button>
+        </div>
+      </div>
+      
+
+    <!-- Section tag for the Contact Section of the webpage -->
+    <!-- Contact Section -->
+    <section class="Main-Contact-Container" id="Contact">
+    <div id="Contact-Form-Container">
+
+        <!-- Left Container -->
+        <div class="Left-Contact-Container">
+
+          <!-- Weston's Chocolate Box Contact Informations -->
+          <div class="Company-Contact-Information">
+
+            <!-- Address -->
+            <div>
+              <h3><i class='bx bxs-factory' ></i> Visit Us</h3>
+              <p>Al Qulaya'ah, Sharjah, United Arab Emirates</p>
+            </div>
+
+            <!-- Contact Number -->
+            <div> 
+              <h3><i class='bx bxs-phone' ></i> Call Us</h3>
+              <p>+971-50-1234567</p>
+            </div>
+
+            <!-- Email Address -->
+            <div>
+              <h3><i class='bx bxs-envelope' ></i> Email Us</h3>
+              <p>WestonChocolateBox@email.com</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Container -->
+        <div class="Right-Contact-Container">
+          <h1>Contact Us</h1>
+
+          <!-- Contact Form where the user can enter their inputs. -->
+          <form>
+
+            <!-- Name -->
+            <div class="Right-Contact-Form-Inputs">
+              <label for="name-input">ENTER YOUR FULL NAME</label>
+              <input id="name-input" type="text" placeholder="Name" required="required"/>
+            </div>
+
+            <!-- Email -->
+            <div class="Right-Contact-Form-Inputs">
+              <label for="email-input">ENTER YOUR EMAIL</label>
+              <input id="email-input" type="text" placeholder="Eg. WestonChocolateBox@email.com" required="required"/>
+            </div>
+
+            <!-- Contact Number -->
+            <div class="Right-Contact-Form-Inputs">
+              <label for="phone-input">ENTER YOUR CONTACT NUMBER</label>
+              <input id="phone-input" type="text" placeholder="Eg. XXX-971-2-1234567" required="required"/>
+            </div>
+
+            <!-- Message Box -->
+            <div class="Right-Contact-Form-Inputs">
+              <label for="message-textarea">ENTER YOUR MESSAGE</label>
+              <textarea id="message-textarea" placeholder="Write your message"></textarea>
+            </div>
+
+            <!-- Send Message Button -->
+            <button>Send Message</button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Section tag for the Login and Sign Up Section of the webpage -->
+    <!-- Login and Sign Up Section -->
+    <section class="LoginandSignUp" id="LoginandSignUp">
+    <div class="LoginandSignUp-Container">
+
+        <!-- Login Form -->
+        <div class="FormContainer login">
+            <form action="#">
+                <h1>Login</h1>
+
+                <!-- Username Input -->
+                <div class="Input-Container">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user-circle' ></i>
+                </div>
+
+                <!-- Password Input -->
+                <div class="Input-Container">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="Forgot-Password-Container">
+                    <a>Forgot Password?</a>
+                </div>
+                <button type="submit" class="LoginandSignUp-Button">Login</button>
+
+            </form>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="FormContainer register">
+            <form action="#">
+                <h1>Registration</h1>
+
+                <!-- Username Input -->
+                <div class="Input-Container">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user-circle' ></i>
+                </div>
+
+                <!-- Email Address Input -->
+                <div class="Input-Container">
+                    <input type="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope' ></i>
+                </div>
+
+                <!-- Password Input -->
+                <div class="Input-Container">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="LoginandSignUp-Button">Register</button>
+
+            </form>
+        </div>
+
+        <!-- Container for the Register Toggle -->
+        <div class="Toggle-Container">
+            <div class="Toggle-Switch Left-Toggle-Button">
+                <h1>Welcome</h1>
+                <p>Create new account?</p>
+
+                <!-- Register Toggle Button -->
+                <button class="LoginandSignUp-Button Register-Toggle">Register</button>
+            </div>
+
+            <!-- Container for the Login Toggle -->
+            <div class="Toggle-Switch Right-Toggle-Button">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account?</p>
+
+                <!-- Login Toggle Button -->
+                <button class="LoginandSignUp-Button Login-Toggle">Login</button>
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+
+
+
+
     <!-- JavaScript -->
     <script src="/Class Activities/Weston's Chocolate Box/script.js"></script>
 
