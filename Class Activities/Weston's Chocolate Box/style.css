@@ -858,4 +858,11 @@ form{ width: 100%; }
         }
 
             .LoginandSignUp-Container.active .Toggle-Switch.Right-Toggle-Button{ bottom: 0; }
+
+    .register h1{
+        font-size: 40px;
+    }            
+    .Right-Toggle-Button h1{
+        font-size: 40px;
+    }
 }
