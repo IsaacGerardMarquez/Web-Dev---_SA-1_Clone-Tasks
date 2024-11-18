@@ -370,6 +370,7 @@ section {
 
 
 /* Contact Section */
+/* This styles the Main Container for the Contact section such as its full viewport height and center alignment. */
 .Main-Contact-Container {
     height: 100vh;
     display: flex;
@@ -377,6 +378,8 @@ section {
     align-items: flex-start;
     background: white;
 }
+
+/* It shows the full width of the viewport and adds a background color. */
 #Contact-Form-Container {
     width: 100vw;
     display: flex;
@@ -384,10 +387,12 @@ section {
     background: #f0c880;
 }
 
+/* This sets the width of the elements child elements of the Contact Form Container to 60%. */
 #Contact-Form-Container > * {
     width: 60%;
 }
 
+/* This styles the left side container to have a background image. */
 #Contact-Form-Container .Left-Contact-Container {
     background: url("/Class Activities/Weston's Chocolate Box/Images/ChocolateContact.jpg") center center/cover no-repeat;
     display: flex;
@@ -395,6 +400,7 @@ section {
     align-items: center;
 }
 
+/* This styles the the texts within the class named "Company-Contact-Information" to have a set font size, text color, and background color. Their alignment is also set. */
 .Company-Contact-Information {
     font-size: 20px;
     color: white;
@@ -403,14 +409,18 @@ section {
     line-height: 1.8;
 }
 
+/* This gives the heading 3 (h3) to have a text color. */
 #Contact-Form-Container .Left-Contact-Container .Company-Contact-Information div h3 {
     color: #f0c880;
 }
 
+/* This adds 30 pixeld of padding to the containers. */
 #Contact-Form-Container .Right-Contact-Container {
     padding: 30px;
 }
 
+
+/* This sets the h1 or heading tag's font size to 50 pixels, a text color, center alignment, and bottom margin. */
 #Contact-Form-Container .Right-Contact-Container h1 {
     font-size: 50px;
     color: #333;
@@ -418,21 +428,25 @@ section {
     margin-bottom: 10px;
 }
 
+/* This is the styling for the right container. */
 #Contact-Form-Container .Right-Contact-Container form {
     display: flex;
     flex-direction: column;
 }
 
+/* This adds 10 pixels of bottom margin for spacing between the containers. */
 #Contact-Form-Container .Right-Contact-Container form .Right-Contact-Form-Inputs {
     margin-bottom: 10px;
 }
 
+/* This is the styling for the input forms. */
 #Contact-Form-Container .Right-Contact-Container form .Right-Contact-Form-Inputs * {
     min-height: 50px;
     border: 1px solid #e6e6e6;
     padding: 0 20px;
 }
 
+/* This is the styling for the label within the form. */
 #Contact-Form-Container .Right-Contact-Container form .Right-Contact-Form-Inputs label {
     display: flex;
     align-items: center;
@@ -440,25 +454,30 @@ section {
     color: #333;
 }
 
+/* This ensures that the input fields span the entire width. */
 #Contact-Form-Container .Right-Contact-Container form .Right-Contact-Form-Inputs:first-of-type input {
     width: 100%;
 }
 
+/* This ensures that the input fields span the entire width. */
 #Contact-Form-Container .Right-Contact-Container form .Right-Contact-Form-Inputs input {
     width: 100%;
 }
   
+/* This sets the text placeholder color to #333333b5. */
 #Contact-Form-Container .Right-Contact-Container form .Right-Contact-Form-Inputs input::placeholder,
 #Contact-Form-Container .Right-Contact-Container form .Right-Contact-Form-Inputs textarea::placeholder {
     color: #333333b5;
 }
 
+/* This styles the textareas in the form. */
 #Contact-Form-Container .Right-Contact-Container form .Right-Contact-Form-Inputs textarea {
     min-height: 100px;
     width: 100%;
     padding: 10px 20px;
 }
 
+/* This styles the button within the contact form. */
 #Contact-Form-Container .Right-Contact-Container form button {
     color: white;
     background-color: #333;
@@ -469,6 +488,7 @@ section {
     transition:  0.6s;
 }
 
+/* This is the styling for the on hover effect of the button within the contact form. */
 #Contact-Form-Container .Right-Contact-Container form button:hover {
     font-weight: bold;
     transform: scale(1.05);
@@ -479,6 +499,7 @@ section {
 
 
 /* Login and Signup Section */
+/* THis styles the Main Container of the Login and Signup Section. */
 .LoginandSignUp {
     display: flex;
     justify-content: center;
@@ -487,6 +508,7 @@ section {
     background-color: #f0c880;
 }
 
+/* This styles the entire Login and Signup container including its alignment, size, color, rounded corners, and shadow effect. */
 .LoginandSignUp-Container {
     position: relative;
     width: 1000px;
@@ -497,16 +519,20 @@ section {
     overflow: hidden;
 }
 
+    /* This sets the h1 or heading tag's font size by 55 pixels. */
     .LoginandSignUp-Container h1 {
         font-size: 55px;
     }
 
+    /* This sets the p or paragraph tag's font size by 16 pixels. */
     .LoginandSignUp-Container p {
         font-size: 16px;
     }
 
+/* Ensures that the form takes up the full width. */
 form{ width: 100%; }
 
+/* This is the styling for the Form container including its positon, size, text color, and background color. */
 .FormContainer {
     display: flex;
     position: absolute;
@@ -522,11 +548,13 @@ form{ width: 100%; }
     transition: .8s ease-in-out 1s, visibility 0s .9s;
 }
 
+    /* This is for the transition effect of the active state container. */
     .LoginandSignUp-Container.active .FormContainer{ right: 50%; }
 
     .FormContainer.register { visibility: hidden; }
         .LoginandSignUp-Container.active .FormContainer.register { visibility: visible; }
 
+/* This is the styling for the input fields. */
 .Input-Container {
     position: relative;
     margin: 20px;
@@ -555,6 +583,7 @@ form{ width: 100%; }
         transform: translateY(-50%);
     }
 
+/* This is the styling for the password link. */
 .Forgot-Password-Container { margin: -15px 0 15px; }
     .Forgot-Password-Container a {
         font-size: 13px;
@@ -563,6 +592,7 @@ form{ width: 100%; }
         cursor: pointer;
     }
 
+/* This styles the button for the Login and Signup form. */
 .LoginandSignUp-Button {
     padding: 10px 20px;
     color: white;
@@ -574,17 +604,19 @@ form{ width: 100%; }
     transition: 0.6S;
 }
 
+/* This styles the on hover effect for the button for the Login and Signup form. */
 .LoginandSignUp-Button:hover {
     transform: scale(1.2);
 }
 
-
+/* This styling is for the Toggle switch container that is responsible for switching between login and signup forms. */
 .Toggle-Container {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
+    /* This is for the transition effect of the toggle switch. */
     .Toggle-Container::before {
         content: '';
         position: absolute;
